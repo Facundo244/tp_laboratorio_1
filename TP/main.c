@@ -87,11 +87,9 @@ int main()
                     printf("\n No se puede dividir por 0\n");
                     printf(" --------------------------------------            \n");
                 }
-                if(operandoA >= 0 && operandoB >= 0)
+                if(operandoA >= 0)
                 {
                     printf("\n El factor de %2.f es: %2.f \n" , operandoA , factorA);
-                    printf(" --------------------------------------            \n");
-                    printf("\n El factor de %2.f es: %2.f \n" , operandoB , factorB);
                     printf(" --------------------------------------            \n");
 
                 }
@@ -99,7 +97,15 @@ int main()
                 {
                     printf("\n No se puede factorear por un numero negativo  \n");
                 }
-
+                if(operandoB >= 0)
+                {
+                    printf("\n El factor de %2.f es: %2.f \n" , operandoB , factorB);
+                    printf(" --------------------------------------            \n");
+                }
+                else
+                {
+                    printf("\n No se puede factorear por un numero negativo  \n");
+                }
                 break;
             case 5:
 
