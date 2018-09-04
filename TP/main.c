@@ -2,25 +2,17 @@
 #include <stdlib.h>
 #include "Operaciones.h"
 
-float sumaValores(float, float);
-float restaValores(float, float);
-float multiplicarValores(float, float);
-float divisionValores(float, float);
-float factorValores(float, float);
-float pedirNumero(void);
-
-
 int main()
 {
     int opcion=0;
     float operandoA=0;
     float operandoB=0;
+    float factorA = 0;
+    float factorB = 0;
     float suma;
     float resta;
     float multiplicacion;
     float division;
-
-
     do
         {
             printf("\n      *********************************************");
@@ -67,6 +59,8 @@ int main()
                 resta = restaValores(operandoA , operandoB);
                 multiplicacion = multiplicarValores(operandoA, operandoB);
                 division = divisionValores(operandoA, operandoB);
+                factorA = factorValores(operandoA);
+                factorB = factorValores(operandoB);
                 printf(" ----------------------------------------------\n");
                 printf("            Operaciones Realizadas...          \n");
                 printf(" ----------------------------------------------\n");
@@ -78,23 +72,34 @@ int main()
                 printf("   ......................                              \n");
                 printf("                                                       \n");
                 printf("\n La suma de %2.f + %2.f es: %2.f\n" , operandoA , operandoB , suma);
-                printf(" --------------------------------------\n");
+                printf(" --------------------------------------                \n");
                 printf("\n La resta de %2.f - %2.f es: %2.f\n" , operandoA , operandoB , resta);
-                printf(" --------------------------------------\n");
+                printf(" --------------------------------------                \n");
                 printf("\n El producto de %2.f * %2.f es: %2.f\n" , operandoA , operandoB , multiplicacion);
-                printf(" --------------------------------------\n");
+                printf(" --------------------------------------                \n");
                 if(operandoB != 0)
                 {
                     printf("\n La division de %2.f / %2.f es: %f\n" , operandoA , operandoB , division);
-                    printf(" --------------------------------------\n");
+                    printf(" --------------------------------------            \n");
                 }
                 else
                 {
                     printf("\n No se puede dividir por 0\n");
-                    printf(" --------------------------------------\n");
+                    printf(" --------------------------------------            \n");
                 }
-                    factorValores(operandoA,operandoB);
-                    printf(" --------------------------------------\n");
+                if(operandoA >= 0 && operandoB >= 0)
+                {
+                    printf("\n El factor de %2.f es: %2.f \n" , operandoA , factorA);
+                    printf(" --------------------------------------            \n");
+                    printf("\n El factor de %2.f es: %2.f \n" , operandoB , factorB);
+                    printf(" --------------------------------------            \n");
+
+                }
+                else
+                {
+                    printf("\n No se puede factorear por un numero negativo  \n");
+                }
+
                 break;
             case 5:
 

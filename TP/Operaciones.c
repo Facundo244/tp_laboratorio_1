@@ -44,47 +44,19 @@ float divisionValores(float numeroUno , float numeroDos)
     }
 
 
-float factorValores(float numeroUno, float numeroDos)
+float factorValores(float numeroUno)
 {
     float factorA;
-    float factorB;
-    float factorialA;
-    float factorialB;
+    float factorialDeA;
     factorA=1;
-    factorB=1;
 
-    if(numeroUno>=0)
-    {
 
-        for (factorialA = numeroUno; factorialA >= 1; factorialA--)
+        for (factorialDeA = numeroUno; factorialDeA > 0; factorialDeA--)
         {
-            factorA = factorA * factorialA;
+            factorA = factorA * factorialDeA;
         }
 
-        printf("El factorial del primero numero es  %2.f\n" , factorA);
-
-    }
-    else
-    {
-        printf("No se puede obtener el factorial del primer numero \n");
-    }
-    if(numeroDos>=0)
-    {
-        for (factorialB = numeroDos; factorialB >= 1; factorialB--)
-        {
-                factorB = factorB * factorialB;
-        }
-        printf("El factorial del segundo numero es  %2.f  \n" , factorB);
-
-    }
-    else
-    {
-        printf("No se puede obtener el factorial del segundo numero \n");
-    }
-
-
-        return 0;
-
+    return factorA;
 
 }
 

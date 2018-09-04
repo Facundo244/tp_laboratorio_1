@@ -1,19 +1,11 @@
-#ifdef Operaciones
+#ifndef Operaciones
 
-float sumaValores(float, float);
-
-float restaValores(float, float);
-
-float multiValores(float, float);
-
-float divisionValores(float, float);
-
+float sumaValores(float,float);
+float restaValores(float,float);
+float multiplicarValores(float,float);
 float pedirNumero(void);
-
-float factorValores(float , float );
-
+float divisionValores(float,float);
+float factorValores(float);
 
 
 #endif // Operaciones
-
-
