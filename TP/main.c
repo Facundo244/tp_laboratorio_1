@@ -20,6 +20,7 @@ int main()
     float multiplicacion;
     float division;
 
+
     do
         {
             printf("\n      *********************************************");
@@ -67,7 +68,7 @@ int main()
                 multiplicacion = multiplicarValores(operandoA, operandoB);
                 division = divisionValores(operandoA, operandoB);
                 printf(" ----------------------------------------------\n");
-                printf("            Operaciones Realizadas...\n");
+                printf("            Operaciones Realizadas...          \n");
                 printf(" ----------------------------------------------\n");
                 break;
             case 4:
@@ -84,7 +85,7 @@ int main()
                 printf(" --------------------------------------\n");
                 if(operandoB != 0)
                 {
-                    printf("\n La division de %2.f / %2.f es: %2.f\n" , operandoA , operandoB , division);
+                    printf("\n La division de %2.f / %2.f es: %f\n" , operandoA , operandoB , division);
                     printf(" --------------------------------------\n");
                 }
                 else
@@ -92,8 +93,8 @@ int main()
                     printf("\n No se puede dividir por 0\n");
                     printf(" --------------------------------------\n");
                 }
-                factorValores(operandoA,operandoB);
-                printf(" --------------------------------------\n");
+                    factorValores(operandoA,operandoB);
+                    printf(" --------------------------------------\n");
                 break;
             case 5:
 

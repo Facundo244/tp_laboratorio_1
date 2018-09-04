@@ -53,7 +53,7 @@ float factorValores(float numeroUno, float numeroDos)
     factorA=1;
     factorB=1;
 
-    if(numeroUno>0)
+    if(numeroUno>=0)
     {
 
         for (factorialA = numeroUno; factorialA >= 1; factorialA--)
@@ -68,7 +68,7 @@ float factorValores(float numeroUno, float numeroDos)
     {
         printf("No se puede obtener el factorial del primer numero \n");
     }
-    if(numeroDos>0)
+    if(numeroDos>=0)
     {
         for (factorialB = numeroDos; factorialB >= 1; factorialB--)
         {
