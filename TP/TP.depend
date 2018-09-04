@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1536022186 source:c:\users\facundo\desktop\tp\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Operaciones.h"
+
+1536021764 source:c:\users\facundo\desktop\tp\operaciones.c
+	<stdio.h>
+	<stdlib.h>
+	"Operaciones.h"
+
+1536018010 c:\users\facundo\desktop\tp\operaciones.h
+
