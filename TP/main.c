@@ -58,20 +58,24 @@ int main()
                 break;
             case 3:
                 system("cls");
-                printf("Calculando...\n");
+                printf(" ----------------------------------------------\n");
+                printf("                Calculando...                  \n");
+                printf(" ----------------------------------------------\n");
                 system("pause");
                 suma = sumaValores(operandoA,operandoB );
                 resta = restaValores(operandoA , operandoB);
                 multiplicacion = multiplicarValores(operandoA, operandoB);
                 division = divisionValores(operandoA, operandoB);
                 printf(" ----------------------------------------------\n");
-                printf("Terminando de calcular...\n");
+                printf("            Operaciones Realizadas...\n");
                 printf(" ----------------------------------------------\n");
                 break;
             case 4:
                 system("cls");
-                printf(" --------------------------------------------------- \n");
-                printf("                Imprimiendo resultados:\n              ");
+                printf("                                                       \n");
+                printf("   Imprimiendo resultados:                             \n");
+                printf("   ......................                              \n");
+                printf("                                                       \n");
                 printf("\n La suma de %2.f + %2.f es: %2.f\n" , operandoA , operandoB , suma);
                 printf(" --------------------------------------\n");
                 printf("\n La resta de %2.f - %2.f es: %2.f\n" , operandoA , operandoB , resta);
