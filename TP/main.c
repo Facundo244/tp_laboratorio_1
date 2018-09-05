@@ -5,6 +5,7 @@
 int main()
 {
     int opcion=0;
+    int validacion=0;
     float operandoA=0;
     float operandoB=0;
     float factorA = 0;
@@ -64,33 +65,36 @@ int main()
                 printf(" ----------------------------------------------\n");
                 printf("            Operaciones Realizadas...          \n");
                 printf(" ----------------------------------------------\n");
+                validacion=1;
                 break;
             case 4:
                 system("cls");
+                if(validacion == 1)
+                {
                 printf("                                                       \n");
                 printf("   Imprimiendo resultados:                             \n");
                 printf("   ......................                              \n");
                 printf("                                                       \n");
                 printf("\n La suma de %2.f + %2.f es: %2.f\n" , operandoA , operandoB , suma);
-                printf(" --------------------------------------                \n");
+                printf(" --------------------------------------*                \n");
                 printf("\n La resta de %2.f - %2.f es: %2.f\n" , operandoA , operandoB , resta);
-                printf(" --------------------------------------                \n");
+                printf(" --------------------------------------*                \n");
                 printf("\n El producto de %2.f * %2.f es: %2.f\n" , operandoA , operandoB , multiplicacion);
-                printf(" --------------------------------------                \n");
+                printf(" --------------------------------------*                \n");
                 if(operandoB != 0)
                 {
                     printf("\n La division de %2.f / %2.f es: %f\n" , operandoA , operandoB , division);
-                    printf(" --------------------------------------            \n");
+                    printf(" --------------------------------------*            \n");
                 }
                 else
                 {
                     printf("\n No se puede dividir por 0\n");
-                    printf(" --------------------------------------            \n");
+                    printf(" --------------------------------------*            \n");
                 }
                 if(operandoA >= 0)
                 {
                     printf("\n El factor de %2.f es: %2.f \n" , operandoA , factorA);
-                    printf(" --------------------------------------            \n");
+                    printf(" --------------------------------------*            \n");
 
                 }
                 else
@@ -100,12 +104,23 @@ int main()
                 if(operandoB >= 0)
                 {
                     printf("\n El factor de %2.f es: %2.f \n" , operandoB , factorB);
-                    printf(" --------------------------------------            \n");
+                    printf(" --------------------------------------*            \n");
                 }
                 else
                 {
                     printf("\n No se puede factorear por un numero negativo  \n");
                 }
+                }
+                else
+                {
+                    system("cls");
+                    printf("    *--------------------------------------*            \n");
+                    printf("   Se necesita realizar las operaciones primero         \n");
+                    printf("    *--------------------------------------*            \n");
+                }
+                operandoA=0;
+                operandoB=0;
+                validacion=0;
                 break;
             case 5:
 
