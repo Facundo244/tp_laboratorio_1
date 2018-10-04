@@ -33,7 +33,7 @@ void menuEmployees(sEmployee listadoEmployee[] , int tam)
             printf("\n      *********************************************");
             printf("\n                                                    ");
             printf("\n");
-            printf("\n          Ingrese una opcion (1/5) : ");
+            printf("\n          Ingrese una opcion (1/5): ");
             scanf("%d" , & opcion);
 
         switch(opcion)
@@ -73,7 +73,7 @@ void menuEmployees(sEmployee listadoEmployee[] , int tam)
 
                 }
                 else
-                {
+               {
                     system("cls");
                     IdAuto();
                     employeeRemoveById(listadoEmployee, tam );
@@ -187,7 +187,7 @@ int addEmployee(sEmployee listadoEmployee[] , int tam)
 
          }while(strlen(auxEmployee.lastName)==0);
 
-         printf(" \n Inggrese salario del empleado: ");
+         printf(" \n Ingrese salario del empleado: ");
          fflush(stdin);
          scanf("%f" , &auxEmployee.salary);
 
@@ -297,6 +297,8 @@ void employeeModify(sEmployee listadoEmployee[] , int tam)
             validar=getch();
             if(validar == 's')
             {
+                do
+                {
                 printf("\n      *********************************************");
                 printf("\n      ||                                         ||");
                 printf("\n      ||          QUE DESEA MODIFICAR ?          ||");
@@ -312,10 +314,9 @@ void employeeModify(sEmployee listadoEmployee[] , int tam)
                 printf("\n      ||      4. Sector                          ||");
                 printf("\n      ||                                         ||");
                 printf("\n      ||                                         ||");
-                printf("\n      ||   5.Salir                               ||");
                 printf("\n      *********************************************");
                 printf("\n");
-                printf("\n          Ingrese una opcion (1/5) :      ");
+                printf("\n          Ingrese una opcion (1/5): ");
                 scanf("%d" , & opcion);
 
                 switch(opcion)
@@ -356,16 +357,20 @@ void employeeModify(sEmployee listadoEmployee[] , int tam)
                         mostrarListadoEmployees(listadoEmployee , tam);
                         system("pause");
                         break;
-                    case 5:
-                        opcion = 5;
-                        break;
                     default:
                         printf("Ingrese una opcion valida");
 
                 }
+
+
+                }
+                while(opcion!=5);
+                {
+                }
             }
         }
     }
+
 }
 
 void menuInformes(sEmployee listadoEmployee[] , int tam)
@@ -388,10 +393,10 @@ void menuInformes(sEmployee listadoEmployee[] , int tam)
                 printf("\n      ||                                                              ||");
                 printf("\n      ||                                                              ||");
                 printf("\n      ||                                                              ||");
-                printf("\n      ||   5.Salir                                                    ||");
+                printf("\n      ||   4.Salir                                                    ||");
                 printf("\n      ******************************************************************");
                 printf("\n");
-                printf("\n          Ingrese una opcion (1/5) :      ");
+                printf("\n          Ingrese una opcion (1/4): ");
                 scanf("%d" , & opcion);
 
                 switch(opcion)
@@ -410,6 +415,11 @@ void menuInformes(sEmployee listadoEmployee[] , int tam)
                         system("cls");
                         avarageSalary(listadoEmployee, tam);
                         break;
+                    case 4:
+                        opcion = 4;
+                        break;
+                    default:
+                        printf("Ingrese una opcion valida");
 
                 }
 

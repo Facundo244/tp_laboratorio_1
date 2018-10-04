@@ -27,3 +27,17 @@
 	<conio.h>
 	"arrayEmployees.h"
 
+1538609206 source:c:\users\facundo\desktop\tp_laboratorio_1\tp_2\arrayemployees.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	"arrayEmployees.h"
+
+1538604466 c:\users\facundo\desktop\tp_laboratorio_1\tp_2\arrayemployees.h
+
+1538604047 source:c:\users\facundo\desktop\tp_laboratorio_1\tp_2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"arrayEmployees.h"
+
