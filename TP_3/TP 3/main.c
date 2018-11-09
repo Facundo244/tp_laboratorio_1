@@ -11,7 +11,7 @@ int main()
     LinkedList* listaEmpleados = ll_newLinkedList();
     do{
 
-    printf("\n||                                 MENU:                                        ||");
+    printf("\n                                  MENU:                                            ");
     printf("\n|| 1. Cargar los datos de los empleados desde el archivo data.csv (modo texto)  ||");
     printf("\n|| 2. Cargar los datos de los empleados desde el archivo data.csv (modo binario)||");
     printf("\n|| 3. Alta de empleado                                                          ||");
@@ -21,7 +21,8 @@ int main()
     printf("\n|| 7. Ordenar empleados                                                         ||");
     printf("\n|| 8. Guardar los datos de los empleados en el archivo data.csv (modo texto)    ||");
     printf("\n|| 9. Guardar los datos de los empleados en el archivo data.csv (modo binario)  ||");
-    printf("\n||  10. Salir                                                                   ||");
+    printf("\n|| 10. Eliminar LinkerList                                                      ||");
+    printf("\n|| 11. Salir                                                                    ||");
     printf("\n  Ingrese una opcion (1/10): ");
     scanf("%d" , & opcion);
 
