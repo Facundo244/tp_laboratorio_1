@@ -3,13 +3,12 @@
 #include "LinkedList.h"
 #include "Employee.h"
 #include "BibliotecaFunciones.h"
-#include <string.h>
+#include "string.h"
 
 static int isValidName(char* name);
 static int isValidHoursWorked(char* HoursWorked);
 static int isValidSalary(char* Salary);
 static int isValidId(char* id);
-
 
 Employee* employee_new(void)
 {
