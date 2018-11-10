@@ -33,16 +33,7 @@ int ObtenerName(char* pNombre, char* msg, char* msgError)
     return retorno;
 }
 
-/**
-    library_getEntero: Pide un numero entero y utiliza getInt para validarlo.
-    @param pNum: Puntero a numero.
-    @param reint: Cantidad de reintentos.
-    @param msg: Mensaje a mostrar.
-    @param msgError: Mensaje de error.
-    @param maximo: Numero maximo.
-    @param minimo: Numero minimo.
-    @return return 0 OK, -1 Error.
-*/
+
 
 int BibliotecaObtenerEntero(int* pNum,int reint,char* msg,char* msgError,int maximo,int minimo)
 {
@@ -70,14 +61,6 @@ int BibliotecaObtenerEntero(int* pNum,int reint,char* msg,char* msgError,int max
     return retorno;
 }
 
-/**
-    library_getEnteroSinLimites: Pide un numero entero y utiliza getInt para validarlo.
-    @param pNum: Puntero a numero.
-    @param reint: Cantidad de reintentos.
-    @param msg: Mensaje a mostrar.
-    @param msgError: Mensaje de error.
-    @return return 0 OK, -1 Error.
-*/
 
 int ObtenerNumeroSinLimitacion(int* pNum, int reint, char* msg, char* msgError)
 {
@@ -99,14 +82,7 @@ int ObtenerNumeroSinLimitacion(int* pNum, int reint, char* msg, char* msgError)
     return retorno;
 }
 
-/**
-    library_getNumeroDecimal: Pide un numero con coma y utiliza a getFloat para validarlo.
-    @param pNum: Puntero a numero.
-    @param reint: Pantidad de reintentos al fallar.
-    @param msg: Mensaje a mostrar.
-    @param msgError: Mensaje de error.
-    @return return 0 OK, -1 Error.
-*/
+
 
 int obtenerNumeroConComa(float *pNum, int reint, char* msg, char* msgError,float maximo,float minimo)
 {
@@ -134,12 +110,7 @@ int obtenerNumeroConComa(float *pNum, int reint, char* msg, char* msgError,float
     return retorno;
 }
 
-/**
-    getString: Permite ingresar una cadena de caracteres recibieno un array.
-    @param pBuffer: Cadena de caracteres que recibe.
-    @param limite: Guarda el int del limite del array.
-    @return : 0 OK, -1 Error.
-*/
+
 
 static int obtenerChar(char* pBufferString,int limite)
 {
@@ -152,11 +123,6 @@ static int obtenerChar(char* pBufferString,int limite)
     return 0;
 }
 
-/**
-    getInt: Permite ingresar un numero entero en una cadena de caracteres y lo transforma a int.
-    @param pResultado: Guarda el numero 1 ingresado luego de validarlo.
-    @return : 0 OK, -1 Error
-*/
 
 static int obtenerEntero(int* pResultado)
 {
@@ -173,11 +139,6 @@ static int obtenerEntero(int* pResultado)
     return retorno;
 }
 
-/**
-    getFloat: Permite ingresar un numero con coma en una cadena de caracteres y lo transforma a float.
-    @param pResultado: Guarda el numero 1 ingresado luego de validarlo.
-    @return : 0 OK, -1 Error
-*/
 
 static int obtenfloat(float* pResultado)
 {
@@ -194,11 +155,6 @@ static int obtenfloat(float* pResultado)
     return retorno;
 }
 
-/**
-    isFloat: Valida si la cadena de caracteres solo tiene numeros y una coma.
-    @param pBuffer: Cadena de caracteres que recibe para validar.
-    @return : 0 OK, -1 Error.
-*/
 
 static int esFlotante(char* pBuffer)
 {
@@ -227,11 +183,6 @@ static int esFlotante(char* pBuffer)
     return retorno;
 }
 
-/**
-    isInt: Valida si la cadena de caracteres solo tiene numeros.
-    @param pBuffer: Cadena de caracteres que recibe para validar.
-    @return : 0 OK, -1 Error.
-*/
 
 int esEntero(char* pBuffer)
 {
@@ -249,11 +200,6 @@ int esEntero(char* pBuffer)
     return retorno;
 }
 
-/**
-    isIntConGuiones: Valida si la cadena de caracteres solo tiene numeros y guiones.
-    @param pBuffer: Cadena de caracteres que recibe para validar.
-    @return : 0 OK, -1 Error.
-*/
 
 int EnteroConGuiones(char* pBuffer)
 {
@@ -278,11 +224,7 @@ int EnteroConGuiones(char* pBuffer)
     return retorno;
 }
 
-/**
-    isLetra: Valida si la cadena de caracteres solo tiene letras, guiones y espacios.
-    @param pBuffer: Cadena de caracteres que recibe para validar.
-    @return : 0 OK, -1 Error.
-*/
+
 
 int esLetra(char* pBuffer)
 {
